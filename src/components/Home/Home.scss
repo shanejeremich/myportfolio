@@ -1,0 +1,31 @@
+.Home {
+  width: 100%;
+  margin-top: 50px;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+
+  img {
+    border-radius: 40%;
+    margin-top: 1.562em;
+    margin-right: 3em;
+    height: 300px;
+  }
+
+  header {
+    font-size: 2em;
+    letter-spacing: -0.05em;
+  }
+
+  p {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  button {
+    margin: 25px 0;
+  }
+}
+
+.bar {
+  width: 10px;
+  background-color: #00b295;
+}
