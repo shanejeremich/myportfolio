@@ -21,6 +21,13 @@ nav {
     margin-left: 3.125em;
   }
 
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    // max-width: calc(100% - 50px);
+  }
+
   button {
     padding: 0.25em;
   }
