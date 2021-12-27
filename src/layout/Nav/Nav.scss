@@ -1,4 +1,4 @@
-@import "../../sass/variables";
+@use "../../sass/abstracts/" as *;
 
 nav {
   background-color: $primary;
