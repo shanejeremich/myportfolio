@@ -4,20 +4,14 @@ import "./Nav.scss";
 const Nav = () => {
   return (
     <nav className="nav">
-      <div className="wrapper">
-        <span className="header-title">
+      <div className="nav-items">
+        <span className="nav-cta">
           <button>SJ</button>
         </span>
-        <span>
-          <Link className="header-link" to="#work">
-            Work
-          </Link>
-          <Link className="header-link" to="#portfolio">
-            Portfolio
-          </Link>
-          <Link className="header-link" to="#contact">
-            Contact
-          </Link>
+        <span className="links">
+          <Link to="#work">Work</Link>
+          <Link to="#portfolio">Portfolio</Link>
+          <Link to="#contact">Contact</Link>
         </span>
       </div>
     </nav>

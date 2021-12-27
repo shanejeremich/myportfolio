@@ -1,11 +1,13 @@
-@import "resets/normalize.scss";
-@import "resets/reset.local.scss";
+@import "resets/normalize";
+@import "resets/reset.local";
+@import "variables";
+
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap");
 
-// * {
-//   border: 1px solid green;
-// }
+* {
+  border: 1px solid green;
+}
 
 body {
   font-family: "Work+Sans", sans-serif;
@@ -13,22 +15,22 @@ body {
 
 button,
 .button {
-  color: #963484;
+  color: $alternate;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   background: #fff;
   padding: 1.25em;
-  border: 0.25em solid #963484;
+  border: 0.25em solid $alternate;
   border-radius: 0.5em;
   transition: all 0.4s ease 0s;
   text-align: center;
 
   &:hover,
   &:hover {
-    color: #ffffff;
-    background: #00b295;
-    border-color: #003459;
+    color: #fff;
+    background: $secondary;
+    border-color: $primary;
     transition: all 0.4s ease 0s;
     cursor: pointer;
   }
