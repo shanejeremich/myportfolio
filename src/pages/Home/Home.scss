@@ -1,9 +1,7 @@
 @use "../../sass/abstracts/" as *;
 
-.Home {
-  width: 100%;
-  margin-top: 50px;
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+.home {
+  grid-area: home;
 
   img {
     border-radius: 40%;

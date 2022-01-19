@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.btn {
+  color: $alternate;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fff;
+  padding: 1.25em;
+  border: 0.25em solid $alternate;
+  border-radius: 0.5em;
+  transition: all 0.4s ease 0s;
+  text-align: center;
+
+  &:hover,
+  &:hover {
+    color: #fff;
+    background: $secondary;
+    border-color: $primary;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+  }
+}

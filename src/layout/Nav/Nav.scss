@@ -1,6 +1,8 @@
 @use "../../sass/abstracts/" as *;
 
 nav {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
   background-color: $primary;
   position: fixed;
   left: 0;
@@ -8,11 +10,8 @@ nav {
   width: 100%;
   z-index: 100;
   height: 3.125em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   color: #fff;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: $font-default;
   font-size: larger;
 
   button {
@@ -20,13 +19,16 @@ nav {
   }
 
   .nav-cta {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
   }
 
   .nav-items {
+    grid-column: 2 / 3;
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 100%;
   }
 
   .links {

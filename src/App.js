@@ -1,10 +1,10 @@
-import Home from "./components/Home/Home";
+import Home from "./pages/Home/Home";
 import Nav from "./layout/Nav/Nav";
-import "./sass/main.scss";
+import "./sass/style.scss";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Nav />
       <Home />
     </div>
