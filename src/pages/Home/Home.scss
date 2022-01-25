@@ -3,13 +3,14 @@
 .home {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  padding: 2rem 0;
 
   background-color: #eee;
-  margin: 0 0 5rem;
 
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-auto-rows: min-content;
+  gap: 2rem;
 
   &__user-img {
     grid-row: 1 / span 3;
