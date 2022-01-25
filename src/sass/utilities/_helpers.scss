@@ -1,0 +1,12 @@
+@use "./variables" as *;
+
+.text-content {
+  font-size: 1.6em;
+  line-height: 1.25em;
+}
+
+.bar {
+  width: 1rem;
+  margin-right: 1rem;
+  background-color: $secondary;
+}

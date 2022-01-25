@@ -1,0 +1,13 @@
+.hero-img {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  height: 30rem;
+
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    height: 100%;
+    padding: 2rem;
+  }
+}

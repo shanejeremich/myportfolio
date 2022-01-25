@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  line-height: 1.6;
+  background-color: #213f91;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+dl,
+dt {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}

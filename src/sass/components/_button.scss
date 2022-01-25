@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use "../utilities" as *;
 
 .btn {
   color: $alternate;
@@ -9,7 +9,7 @@
   padding: 1.25em;
   border: 0.25em solid $alternate;
   border-radius: 0.5em;
-  transition: all 0.4s ease 0s;
+  transition: all 0.2s ease-in;
   text-align: center;
 
   &:hover,
@@ -17,7 +17,7 @@
     color: #fff;
     background: $secondary;
     border-color: $primary;
-    transition: all 0.4s ease 0s;
+    transition: all 0.2s ease-in;
     cursor: pointer;
   }
 }

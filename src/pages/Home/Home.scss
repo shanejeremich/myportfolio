@@ -1,31 +1,33 @@
-@use "../../sass/abstracts/" as *;
+@use "../../sass/utilities/" as *;
 
 .home {
-  grid-area: home;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 
-  img {
-    border-radius: 40%;
-    margin-top: 1.562em;
-    margin-right: 3em;
-    height: 300px;
+  background-color: #eee;
+  margin: 0 0 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: min-content;
+
+  &__user-img {
+    grid-row: 1 / span 3;
+    border-radius: 20%;
+    height: 30rem;
   }
 
-  header {
-    font-size: 2em;
+  &__header {
+    padding: 0 0 0 3rem;
+    font-size: 2rem;
     letter-spacing: -0.05em;
   }
 
-  p {
-    font-size: 1.5em;
-    line-height: 1.25em;
+  &__btn {
+    width: max-content;
+    margin: 2rem 3rem;
   }
-
-  button {
-    margin: 25px 0;
+  & .text-content {
+    padding: 3rem 0 3rem 6rem;
   }
-}
-
-.bar {
-  width: 10px;
-  background-color: $secondary;
 }
