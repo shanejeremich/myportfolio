@@ -1,14 +1,19 @@
 .hero-img {
+  display: contents;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  height: 30rem;
-  // background-color: #000;
+  height: 40rem;
+  margin: -5rem 0 0;
 
   display: flex;
   justify-content: center;
 
   &__img {
-    height: 100%;
-    padding: 2rem;
+    position: relative;
+    object-fit: contain;
+    height: 35rem;
+    width: 100%;
+    padding-bottom: 3rem;
+    z-index: -1;
   }
 }

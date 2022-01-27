@@ -3,7 +3,6 @@
 .home {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-  padding: 2rem 0;
 
   background-color: #eee;
 
@@ -11,6 +10,7 @@
   grid-template-columns: repeat(2, auto);
   grid-auto-rows: min-content;
   gap: 2rem;
+  z-index: 2;
 
   &__user-img {
     grid-row: 1 / span 3;
@@ -19,7 +19,6 @@
   }
 
   &__header {
-    padding: 0 0 0 3rem;
     font-size: 2rem;
     letter-spacing: -0.05em;
   }
