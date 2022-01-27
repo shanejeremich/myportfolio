@@ -1,23 +1,31 @@
 @use "../utilities" as *;
 
 .btn {
-  color: $alternate;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #fff;
-  padding: 1.25em;
-  border: 0.25em solid $alternate;
-  border-radius: 0.5em;
-  transition: all 0.2s ease-in;
-  text-align: center;
+  &,
+  &:link,
+  &visited {
+    color: $primary;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background: $white;
+    padding: 1rem;
+    cursor: pointer;
 
-  &:hover,
+    border: 0.2rem solid $primary;
+    border-radius: 1rem;
+    transition: all 0.2s cubic-bezier(0.65, 0, 0.076, 1);
+  }
+
   &:hover {
     color: #fff;
-    background: $secondary;
-    border-color: $primary;
-    transition: all 0.2s ease-in;
-    cursor: pointer;
+    background: $primary;
+    box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
 }

@@ -1,6 +1,6 @@
 import logo from "../../images/sj-logo.png";
 
-import "./Nav.scss";
+import "./nav.scss";
 
 const Nav = () => {
   return (

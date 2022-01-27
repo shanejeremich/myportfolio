@@ -11,14 +11,14 @@
   gap: 5rem;
 }
 
-.hero-bg {
+.row-hero {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   background-color: #000;
   margin-top: -5rem;
 }
 
-.row-1 {
+.row-about-me {
   grid-column: 1 / -1;
   grid-row: 3 / 4;
   background-color: #eee;
@@ -28,9 +28,36 @@
   z-index: 1;
 }
 
-.row-2 {
+.row-work {
   grid-column: 1 / -1;
   grid-row: 4 / 5;
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: $shadow-dark;
+  z-index: 1;
+}
+
+.row-portfolio {
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: $shadow-dark;
+  z-index: 1;
+}
+
+.row-contact {
+  grid-column: 1 / -1;
+  grid-row: 6 / 7;
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: $shadow-dark;
+  z-index: 1;
+}
+
+.row-footer {
+  grid-column: 1 / -1;
+  grid-row: 7 / 8;
   background-color: orangered;
   box-shadow: $shadow-dark;
 }

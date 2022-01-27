@@ -2,9 +2,9 @@ import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import heroImg from "../../images/sj-high-res.png";
 
-import "./HeroImage.scss";
+import "./hero.scss";
 
-function HeroImage() {
+function Hero() {
   return (
     <div className="hero-img">
       <Parallax translateY={[-40, 40]}>
@@ -14,4 +14,4 @@ function HeroImage() {
   );
 }
 
-export default HeroImage;
+export default Hero;

@@ -1,21 +1,30 @@
-import Nav from "./layout/Nav/Nav";
-import HeroImage from "./layout/HeroImage/HeroImage";
-import Home from "./pages/Home/Home";
-import Footer from "./layout/Footer/Footer";
+import Nav from "./layout/nav/nav";
+import Hero from "./layout/hero/hero";
+import AboutMe from "./components/about-me/about-me";
+import Footer from "./layout/footer/footer";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 import "./sass/style.scss";
+import Contact from "./components/contact/contact";
+import Portfolio from "./components/portfolio/portfolio";
+import Work from "./components/work/work";
 
 function App() {
   return (
     <ParallaxProvider>
       <div className="container">
         <Nav />
-        <div className="hero-bg"></div>
-        <HeroImage />
-        <div className="row-1"></div>
-        <Home />
-        <div className="row-2"></div>
+        <div className="row-hero"></div>
+        <Hero />
+        <div className="row-about-me"></div>
+        <AboutMe />
+        <div className="row-work"></div>
+        <Work />
+        <div className="row-portfolio"></div>
+        <Portfolio />
+        <div className="row-contact"></div>
+        <Contact />
+        <div className="row-footer"></div>
         <Footer />
       </div>
     </ParallaxProvider>
