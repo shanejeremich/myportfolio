@@ -6,11 +6,11 @@ import "./hero.scss";
 
 function Hero() {
   return (
-    <div className="hero-img">
+    <section className="hero-img">
       <Parallax translateY={[-40, 40]}>
         <img src={heroImg} alt="Shane Jeremich Hero" className="hero-img__img" />
       </Parallax>
-    </div>
+    </section>
   );
 }
 

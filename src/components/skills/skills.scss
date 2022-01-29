@@ -1,8 +1,8 @@
 @use "../../sass/utilities/variables" as *;
 
-.contact {
+.skills {
   grid-column: 2 / 3;
-  grid-row: 6 / 7;
+  grid-row: 4 / 5;
   z-index: 2;
   padding: 10rem 0;
 
@@ -16,7 +16,7 @@
   &__header {
     font-size: 3rem;
     text-transform: uppercase;
-    text-indent: 1rem;
+    text-indent: 1.5rem;
     padding: 1rem;
     letter-spacing: 1.5rem;
     grid-row: 1 / 2;
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     width: max-content;
-    transform: translateY(50%) translateX(6%);
+    transform: translateY(50%) translateX(10%);
   }
 
   &__card-content {
@@ -33,5 +33,17 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: $shadow-dark;
     padding: 10rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & img {
+      height: 5rem;
+
+      &:nth-last-of-type(1) {
+        margin-bottom: 4rem;
+      }
+    }
   }
 }

@@ -10,8 +10,8 @@ const Nav = () => {
           <img src={logo} alt="Shane Jeremich Logo" className="nav__logo" />
         </a>
         <span className="nav__links">
-          <a href="#work" className="nav__link">
-            Work
+          <a href="#skills" className="nav__link">
+            Skills
           </a>
           <a href="#portfolio" className="nav__link">
             Portfolio

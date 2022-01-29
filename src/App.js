@@ -7,7 +7,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import "./sass/style.scss";
 import Contact from "./components/contact/contact";
 import Portfolio from "./components/portfolio/portfolio";
-import Work from "./components/work/work";
+import Skills from "./components/skills/skills";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <div className="row-about-me"></div>
         <AboutMe />
         <div className="row-work"></div>
-        <Work />
+        <Skills />
         <div className="row-portfolio"></div>
         <Portfolio />
         <div className="row-contact"></div>

@@ -19,7 +19,7 @@ const AboutMe = () => {
         back-end. My top skills are React, Javascript, Nodejs, Express. The roles I'm looking for would include either
         an internship, apprenticeship, junior web developer as a front-end or full-stack web developer.
       </p>
-      <a href="#work">
+      <a href="#skills">
         <div className="about-me__btn btn">Learn What I can do &rarr;</div>
       </a>
     </section>
