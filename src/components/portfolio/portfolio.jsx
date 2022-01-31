@@ -1,13 +1,109 @@
 import "./portfolio.scss";
+import trillo from "../../images/trillo.jpg";
+import crwnClothing from "../../images/crwnclothing.jpg";
+import cityspire from "../../images/cityspire.jpg";
+import shoppies from "../../images/shoppies.jpg";
+import monstersRolodex from "../../images/monstersrolodex.jpg";
+import landingPage from "../../images/landingpage.jpg";
+import browser from "../../images/browser.svg";
+import gitHub from "../../images/github.svg";
 
 function Portfolio() {
   return (
     <section className="portfolio" id="portfolio">
       <div className="portfolio__card">
-        <div className="portfolio__header text-bg">
-          <span>Portfolio</span>
+        <div className="portfolio__header text-bg">Portfolio</div>
+        <div className="portfolio__card-content">
+          <div className="projects">
+            <div className="project">
+              <img src={crwnClothing} alt="CRWN-Clothing" className="project__img" />
+              <h5 className="project__name">CRWN-Clothing</h5>
+              <p className="project__text text-content">
+                This application is a react app that demostrates a demo build of a clothing store called Crown Clothing.
+                Crown Clothing uses Firebase as its database and user authentication and for payments, we are using
+                Stripe. For state management we are using Redux. This application is hosted on Heroku.
+              </p>
+              <div className="project__icons">
+                <img src={browser} alt="CRWN-Clothing" className="icon" />
+                <img src={gitHub} alt="GitHub" className="icon" />
+              </div>
+            </div>
+
+            <div className="project">
+              <img src={cityspire} alt="Cityspire" className="project__img" />
+              <h5 className="project__name">Cityspire</h5>
+              <p className="project__text text-content">
+                This was a class project from my labs in Bloom Tech (f.k.a. Lambda School). Future of this app will have
+                more features. Right now this just shows the implementation of Mapbox GL and Okta for authentication.
+              </p>
+              <div className="project__icons">
+                <img src={browser} alt="Cityspire" className="icon" />
+                <img src={gitHub} alt="GitHub" className="icon" />
+              </div>
+            </div>
+            <div className="project">
+              <img src={shoppies} alt="The Shoppies" className="project__img" />
+              <h5 className="project__name">The Shoppies</h5>
+              <p className="project__text text-content">
+                This was my submission for the Web Developer Intern Challenge in the Fall of 2021. This application
+                makes a API call to OMDBapi and pulls information based on the search parameters.
+              </p>
+              <div className="project__icons">
+                <img src={browser} alt="Cityspire" className="icon" />
+                <img src={gitHub} alt="GitHub" className="icon" />
+              </div>
+            </div>
+            <div className="project">
+              <img src={landingPage} alt="Landing Page" className="project__img" />
+              <h5 className="project__name">Landing-Page</h5>
+              <p className="project__text text-content">
+                This was a challenge from&nbsp;
+                <a
+                  href="https://www.frontendmentor.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project__link">
+                  Frontend Mentor
+                </a>
+                . The challenge is to test my skills to replicate this landing page and get it looking as close to the
+                design as possible that was provided to me.
+              </p>
+              <div className="project__icons">
+                <img src={browser} alt="Landing Page" className="icon" />
+                <img src={gitHub} alt="GitHub" className="icon" />
+              </div>
+            </div>
+            <div className="project">
+              <img src={monstersRolodex} alt="Monsters Rolodex" className="project__img" />
+              <h5 className="project__name">Monsters Rolodex</h5>
+              <p className="project__text text-content">
+                This project is just a simple fetch to an API containing users, attached to each user is a monster image
+                coming from another API, and using a search bar to automatically display search results based on users
+                input in the search bar as they type.
+              </p>
+              <div className="project__icons">
+                <img src={browser} alt="Monsters Rolodex" className="icon" />
+                <img src={gitHub} alt="GitHub" className="icon" />
+              </div>
+            </div>
+            <div className="project">
+              <img src={trillo} alt="Trillo" className="project__img" />
+              <h5 className="project__name">Trillo</h5>
+              <p className="project__text text-content">
+                This is a template layout of a hotel, flight, car rental, and tour search. This template shows examples
+                of users ratings, hotel images, descriptions, showing off various CSS/SASS styles. This was built with
+                html and CSS/SASS.
+              </p>
+              <div className="project__icons">
+                <img src={browser} alt="Game of Life" className="icon" />
+                <img src={gitHub} alt="GitHub" className="icon" />
+              </div>
+            </div>
+          </div>
+          <a href="#contact">
+            <div className="portfolio__btn btn">Get in touch with me &rarr;</div>
+          </a>
         </div>
-        <div className="portfolio__card-content">card-content</div>
       </div>
     </section>
   );

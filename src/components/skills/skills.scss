@@ -34,16 +34,20 @@
     box-shadow: $shadow-dark;
     padding: 10rem;
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    .badges-wrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
     & img {
       height: 5rem;
+    }
 
-      &:nth-last-of-type(1) {
-        margin-bottom: 4rem;
-      }
+    & a {
+      display: block;
+      width: max-content;
+      margin: 5rem auto 0;
     }
   }
 }
