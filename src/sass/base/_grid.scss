@@ -8,7 +8,7 @@
 
   display: grid;
   grid-template-columns: minmax(0.1rem, auto) minmax(40rem, 120rem) minmax(0.1rem, auto);
-  gap: 5rem;
+  gap: 5rem 0;
 }
 
 .row-hero {

@@ -1,11 +1,12 @@
 import "./skills.scss";
 import googleNinja from "../../images/google-ninja.png";
+import resume from "../../images/resume.svg";
 
 function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="skills__card">
-        <div className="skills__header text-bg">skills</div>
+        <div className="skills__header text-bg">skills & techs</div>
         <div className="skills__card-content">
           <div className="badges-wrap">
             <img
@@ -59,8 +60,18 @@ function Skills() {
             />
             <img alt="Google Ninja" src={googleNinja} />
           </div>
+
+          <a
+            href="https://drive.google.com/file/d/1-MhCMtd7B6qRTgQGaRrEXqA5MZUI1UYV/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="skills__resume">
+            <img src={resume} alt="Resume" />
+            <span className="skills__resume--text">My Resume</span>
+          </a>
+
           <a href="#portfolio">
-            <div className="work__btn btn">See Some of my recent work &rarr;</div>
+            <div className="skills__btn btn">See Some of my recent work &rarr;</div>
           </a>
         </div>
       </div>

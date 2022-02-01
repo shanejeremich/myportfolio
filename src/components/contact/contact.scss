@@ -5,6 +5,7 @@
   grid-row: 6 / 7;
   z-index: 2;
   padding: 10rem 0;
+  color: #fff;
 
   &__card {
     width: 100%;
@@ -20,16 +21,17 @@
     padding: 1rem;
     letter-spacing: 1.5rem;
     grid-row: 1 / 2;
-    color: #fff;
     display: flex;
     align-items: center;
     width: max-content;
     transform: translateY(50%) translateX(6%);
+    border: 1px solid #000;
+    color: #000;
   }
 
   &__card-content {
     grid-row: 2 / 3;
-    background-color: #fff;
+    background-color: #000;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: $shadow-dark;
     padding: 10rem;

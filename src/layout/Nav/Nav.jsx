@@ -19,6 +19,13 @@ const Nav = () => {
           <a href="#contact" className="nav__link">
             Contact
           </a>
+          <a
+            href="https://drive.google.com/file/d/1-MhCMtd7B6qRTgQGaRrEXqA5MZUI1UYV/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav__link resume">
+            My Resume
+          </a>
         </span>
       </div>
     </nav>
