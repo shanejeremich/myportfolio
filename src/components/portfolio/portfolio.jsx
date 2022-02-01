@@ -24,8 +24,12 @@ function Portfolio() {
                 Stripe. For state management we are using Redux. This application is hosted on Heroku.
               </p>
               <div className="project__icons">
-                <img src={browser} alt="CRWN-Clothing" className="icon" />
-                <img src={gitHub} alt="GitHub" className="icon" />
+                <a href="https://crwn-clothing-v1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <img src={browser} alt="CRWN-Clothing" className="icon" />
+                </a>
+                <a href="https://github.com/sjeremich23/crwn-clothing" target="_blank" rel="noopener noreferrer">
+                  <img src={gitHub} alt="GitHub" className="icon" />
+                </a>
               </div>
             </div>
 
@@ -37,8 +41,12 @@ function Portfolio() {
                 more features. Right now this just shows the implementation of Mapbox GL and Okta for authentication.
               </p>
               <div className="project__icons">
-                <img src={browser} alt="Cityspire" className="icon" />
-                <img src={gitHub} alt="GitHub" className="icon" />
+                <a href="https://cityspire.shanejeremich.com/" target="_blank" rel="noopener noreferrer">
+                  <img src={browser} alt="CRWN-Clothing" className="icon" />
+                </a>
+                <a href="https://github.com/sjeremich23/cityspire-d-fe" target="_blank" rel="noopener noreferrer">
+                  <img src={gitHub} alt="GitHub" className="icon" />
+                </a>
               </div>
             </div>
             <div className="project">
@@ -49,8 +57,12 @@ function Portfolio() {
                 makes a API call to OMDBapi and pulls information based on the search parameters.
               </p>
               <div className="project__icons">
-                <img src={browser} alt="Cityspire" className="icon" />
-                <img src={gitHub} alt="GitHub" className="icon" />
+                <a href="https://sjeremich23.github.io/movie-search/" target="_blank" rel="noopener noreferrer">
+                  <img src={browser} alt="CRWN-Clothing" className="icon" />
+                </a>
+                <a href="https://github.com/sjeremich23/movie-search" target="_blank" rel="noopener noreferrer">
+                  <img src={gitHub} alt="GitHub" className="icon" />
+                </a>
               </div>
             </div>
             <div className="project">
@@ -69,8 +81,12 @@ function Portfolio() {
                 design as possible that was provided to me.
               </p>
               <div className="project__icons">
-                <img src={browser} alt="Landing Page" className="icon" />
-                <img src={gitHub} alt="GitHub" className="icon" />
+                <a href="https://landing-page-shanejeremich.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <img src={browser} alt="CRWN-Clothing" className="icon" />
+                </a>
+                <a href="https://github.com/sjeremich23/Landing-Page" target="_blank" rel="noopener noreferrer">
+                  <img src={gitHub} alt="GitHub" className="icon" />
+                </a>
               </div>
             </div>
             <div className="project">
@@ -82,8 +98,12 @@ function Portfolio() {
                 input in the search bar as they type.
               </p>
               <div className="project__icons">
-                <img src={browser} alt="Monsters Rolodex" className="icon" />
-                <img src={gitHub} alt="GitHub" className="icon" />
+                <a href="https://sjeremich23.github.io/Monsters-Rolodex/" target="_blank" rel="noopener noreferrer">
+                  <img src={browser} alt="CRWN-Clothing" className="icon" />
+                </a>
+                <a href="https://github.com/sjeremich23/Monsters-Rolodex" target="_blank" rel="noopener noreferrer">
+                  <img src={gitHub} alt="GitHub" className="icon" />
+                </a>
               </div>
             </div>
             <div className="project">
@@ -95,8 +115,12 @@ function Portfolio() {
                 html and CSS/SASS.
               </p>
               <div className="project__icons">
-                <img src={browser} alt="Game of Life" className="icon" />
-                <img src={gitHub} alt="GitHub" className="icon" />
+                <a href="https://sjeremich23.github.io/Trillo/" target="_blank" rel="noopener noreferrer">
+                  <img src={browser} alt="CRWN-Clothing" className="icon" />
+                </a>
+                <a href="https://github.com/sjeremich23/Trillo" target="_blank" rel="noopener noreferrer">
+                  <img src={gitHub} alt="GitHub" className="icon" />
+                </a>
               </div>
             </div>
           </div>

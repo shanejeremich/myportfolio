@@ -88,6 +88,14 @@
         .icon {
           height: 5rem;
           margin: 0 2rem 5rem;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            filter: brightness(0) saturate(100%) invert(16%) sepia(35%) saturate(4955%) hue-rotate(218deg)
+              brightness(91%) contrast(90%);
+            transition: transform 0.3s ease-in-out;
+          }
         }
       }
 
@@ -97,11 +105,11 @@
 
       &:hover {
         transform: translateY(-2%);
-        box-shadow: 0 6rem 6rem rgba(0, 0, 0, 0.3);
+        box-shadow: 0 7rem 6rem rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease-in-out;
 
         & .project__img {
-          transform: scale(1.1);
+          transform: scale(1.2);
           transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         }
 
@@ -116,6 +124,6 @@
   &__btn {
     display: block;
     width: max-content;
-    margin: 5rem auto 0;
+    margin: 8rem auto 0;
   }
 }
