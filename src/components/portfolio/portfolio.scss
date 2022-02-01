@@ -48,6 +48,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: max-content 1fr max-content;
       gap: 3.5rem;
+      overflow: hidden;
 
       &__img {
         width: 100%;
@@ -92,6 +93,22 @@
 
       &__link {
         display: inline-block;
+      }
+
+      &:hover {
+        transform: translateY(-2%);
+        box-shadow: 0 6rem 6rem rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+
+        & .project__img {
+          transform: scale(1.1);
+          transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+
+        & .project__name {
+          color: #fff;
+          background-color: $primary;
+        }
       }
     }
   }
