@@ -14,7 +14,7 @@
 .text-bg {
   background-color: #000;
 
-  &--white {
-    background-color: #fff;
+  &--primary {
+    background-color: $primary;
   }
 }

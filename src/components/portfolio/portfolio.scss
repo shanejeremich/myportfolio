@@ -92,8 +92,7 @@
           &:hover {
             cursor: pointer;
             transform: scale(1.1);
-            filter: brightness(0) saturate(100%) invert(16%) sepia(35%) saturate(4955%) hue-rotate(218deg)
-              brightness(91%) contrast(90%);
+            filter: $filter;
             transition: transform 0.3s ease-in-out;
           }
         }
@@ -115,7 +114,9 @@
 
         & .project__name {
           color: #fff;
-          background-color: $primary;
+          background-color: $secondary;
+          transform: translateY(50%) scale(1.2);
+          transition: all 0.2s ease-in-out;
         }
       }
     }

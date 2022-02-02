@@ -7,7 +7,7 @@
   background-color: #eee;
 
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: auto 60%;
   grid-auto-rows: min-content;
   gap: 2rem;
   z-index: 2;
@@ -16,9 +16,8 @@
   &__user-img {
     grid-row: 1 / span 3;
     border-radius: 20%;
-    height: 100%;
     object-fit: cover;
-    display: block;
+    max-inline-size: 100%;
   }
 
   &__header {
@@ -28,8 +27,7 @@
 
   &__btn {
     width: max-content;
-    margin: 2rem 3rem;
-    transform: translateX(70%);
+    margin: 2rem auto 2rem 2rem;
   }
   & .text-content {
     padding: 3rem 0 3rem 6rem;

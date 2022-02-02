@@ -1,9 +1,15 @@
 $primary: #1e3a87;
+$secondary: #43bff0;
 
-$grey: #555;
+$grey: #444;
 $white: #eee;
+
+$filter: brightness(0) saturate(100%) invert(59%) sepia(53%) saturate(1463%) hue-rotate(173deg) brightness(110%)
+  contrast(88%);
 
 $shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 
 $font-default: "Work+Sans", sans-serif;
+
+$ease-in-out: background-color 0.2s ease-in-out;

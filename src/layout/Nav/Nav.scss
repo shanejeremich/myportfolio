@@ -20,8 +20,7 @@
     padding: 1rem 0;
 
     &:hover {
-      filter: invert(55%);
-      transition: 0.2s;
+      filter: $filter;
     }
 
     &:active,
@@ -76,8 +75,8 @@
 
     &:hover,
     &:active {
-      color: #000;
-      transition: 0.2s background ease-in;
+      background-color: $secondary;
+      transition: $ease-in-out;
     }
   }
 }
