@@ -1,12 +1,12 @@
 import "./portfolio.scss";
-import trillo from "../../images/trillo.jpg";
-import crwnClothing from "../../images/crwnclothing.jpg";
-import cityspire from "../../images/cityspire.jpg";
-import shoppies from "../../images/shoppies.jpg";
-import monstersRolodex from "../../images/monstersrolodex.jpg";
-import landingPage from "../../images/landingpage.jpg";
-import browser from "../../images/browser.svg";
-import gitHub from "../../images/github.svg";
+import trillo from "../../images/projects/trillo.jpg";
+import crwnClothing from "../../images/projects/crwnclothing.jpg";
+import cityspire from "../../images/projects/cityspire.jpg";
+import shoppies from "../../images/projects/shoppies.jpg";
+import monstersRolodex from "../../images/projects/monstersrolodex.jpg";
+import landingPage from "../../images/projects/landingpage.jpg";
+import browser from "../../images/svg/browser.svg";
+import gitHub from "../../images/svg/github.svg";
 
 function Portfolio() {
   return (

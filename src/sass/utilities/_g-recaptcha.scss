@@ -8,5 +8,12 @@
 
 .g-recaptcha {
   grid-column: 1 / -1;
-  margin: 2rem 0;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.g-recaptcha--text {
+  grid-column: 1 / -1;
 }

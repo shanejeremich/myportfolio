@@ -1,6 +1,6 @@
 import "./skills.scss";
 import googleNinja from "../../images/google-ninja.png";
-import resume from "../../images/resume.svg";
+import resume from "../../images/svg/resume.svg";
 
 function Skills() {
   return (

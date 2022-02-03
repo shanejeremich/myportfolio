@@ -11,6 +11,10 @@ function Contact() {
     }
   };
 
+  function onSubmit(token) {
+    document.getElementById("contact-form").submit();
+  }
+
   return (
     <section className="contact" id="contact">
       <div className="contact__card">
@@ -22,7 +26,7 @@ function Contact() {
             <h1>Lets get together and create some stuff</h1>
             <h2>Message me your ideas and I'll get back to you right away</h2>
           </header>
-          <form className="contact__form" method="post" action={url} acceptCharset="utf-8">
+          <form id="contact-form" className="contact__form" method="post" action={url} acceptCharset="utf-8">
             <input type="hidden" name="utf8" value="✓" />
             <input type="hidden" name="_redirect" value="https://liveformhq.com/thank_you" />
 
@@ -30,10 +34,23 @@ function Contact() {
             <input type="email" name="email" placeholder="Email" className="contact__form--email" required />
             <input type="text" name="subject" placeholder="Subject" className="contact__form--subject" required />
             <textarea type="text" name="message" placeholder="Message" className="contact__form--message" required />
-            <div className="g-recaptcha" data-sitekey={key}></div>
+
+            <p className="g-recaptcha--text">
+              This site is protected by reCAPTCHA and the Google&nbsp;
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                Privacy Policy
+              </a>
+              &nbsp;and&nbsp;
+              <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">
+                Terms of Service
+              </a>
+              &nbsp;apply.
+            </p>
 
             <div className="actions">
-              <button type="submit">Send Message</button>
+              <button class="g-recaptcha" data-sitekey={key} data-callback={onSubmit}>
+                Send message
+              </button>
               <button type="reset">Clear Form</button>
             </div>
           </form>
