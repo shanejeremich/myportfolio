@@ -7,9 +7,55 @@
   color: #fff;
   font-size: 1.9rem;
   text-align: center;
+  margin-bottom: 5rem;
 
-  img {
-    margin: 5rem auto;
+  &__social {
+    svg {
+      height: 4.5rem;
+      width: 4.5rem;
+      border: 1px solid #fff;
+      margin: 5rem auto;
+      margin: 5rem 0.25rem;
+      transition: transform 0.2s;
+    }
+
+    &--github {
+      &:hover {
+        filter: invert(100%);
+        background-color: #000;
+        transform: translateY(-10%);
+      }
+    }
+
+    &--linkedin {
+      &:hover {
+        background-color: #006599;
+        transform: translateY(-10%);
+      }
+    }
+    &--facebook {
+      &:hover {
+        background-color: #3c5a98;
+        transform: translateY(-10%);
+      }
+    }
+    &--twitter {
+      &:hover {
+        background-color: #2daae4;
+        transform: translateY(-10%);
+      }
+    }
+    &--youtube {
+      &:hover {
+        background-color: #bf2e25;
+        transform: translateY(-10%);
+      }
+    }
+  }
+
+  &__logo {
+    height: 10rem;
+    margin-bottom: 5rem;
   }
 
   small {

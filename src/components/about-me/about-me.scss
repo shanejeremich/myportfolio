@@ -15,9 +15,10 @@
 
   &__user-img {
     grid-row: 1 / span 3;
-    border-radius: 20%;
+    align-self: center;
+    justify-self: center;
     object-fit: cover;
-    max-inline-size: 100%;
+    max-inline-size: 80%;
   }
 
   &__header {

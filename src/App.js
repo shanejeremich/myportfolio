@@ -1,13 +1,13 @@
+import { ParallaxProvider } from "react-scroll-parallax";
 import Nav from "./layout/nav/nav";
 import Hero from "./layout/hero/hero";
 import AboutMe from "./components/about-me/about-me";
-import Footer from "./layout/footer/footer";
-
-import { ParallaxProvider } from "react-scroll-parallax";
-import "./sass/style.scss";
+import Skills from "./components/skills/skills";
 import Contact from "./components/contact/contact";
 import Portfolio from "./components/portfolio/portfolio";
-import Skills from "./components/skills/skills";
+import Footer from "./layout/footer/footer";
+
+import "./sass/style.scss";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Hero />
         <div className="row-about-me"></div>
         <AboutMe />
-        <div className="row-work"></div>
+        <div className="row-skills"></div>
         <Skills />
         <div className="row-portfolio"></div>
         <Portfolio />

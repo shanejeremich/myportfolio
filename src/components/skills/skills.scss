@@ -4,7 +4,7 @@
   grid-column: 2 / 3;
   grid-row: 4 / 5;
   z-index: 2;
-  padding: 10rem 0;
+  padding: 5rem 0;
 
   &__card {
     width: 100%;
@@ -32,7 +32,8 @@
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: $shadow-dark;
-    padding: 10rem;
+    padding: 10rem 10rem 7rem;
+    margin-bottom: 5rem;
 
     .badges-wrap {
       display: flex;
@@ -72,8 +73,8 @@
       transform: translateX(-4%);
     }
 
-    &:hover,
-    &:active {
+    &__link:hover,
+    &__link:active {
       color: $primary;
       transform: scale(1.1);
       transition: 0.2s;
