@@ -1,3 +1,5 @@
+@use "../../sass/utilities" as *;
+
 .hero-img {
   display: contents;
   grid-column: 2 / 3;
@@ -7,6 +9,14 @@
 
   display: flex;
   justify-content: center;
+
+  @include respond(tab-land) {
+    margin: 0 5em;
+  }
+
+  @include respond(phone) {
+    margin: -10rem 0 5em;
+  }
 
   &__img {
     position: relative;

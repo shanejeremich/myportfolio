@@ -1,4 +1,4 @@
-@use "../../sass/utilities/" as *;
+@use "../../sass/utilities" as *;
 
 .about-me {
   grid-column: 2 / 3;
@@ -13,22 +13,42 @@
   z-index: 2;
   margin-bottom: 5rem;
 
+  @include respond(phone-xs) {
+    grid-template-columns: auto;
+  }
+
   &__user-img {
     grid-row: 1 / span 3;
     align-self: center;
     justify-self: center;
     object-fit: cover;
     max-inline-size: 80%;
+
+    @include respond(phone) {
+      max-inline-size: 90%;
+    }
+
+    @include respond(phone-xs) {
+      max-inline-size: 50%;
+    }
   }
 
   &__header {
     font-size: 2rem;
     letter-spacing: -0.05em;
+
+    @include respond(phone-xs) {
+      text-align: center;
+    }
   }
 
   &__btn {
     width: max-content;
     margin: 2rem auto 2rem 2rem;
+
+    @include respond(phone-xs) {
+      margin: 0 auto;
+    }
   }
   & .text-content {
     padding: 3rem 0 3rem 6rem;

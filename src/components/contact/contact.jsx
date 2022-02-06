@@ -1,8 +1,9 @@
+// import { ReCAPTCHA } from "react-google-recaptcha";
 import "./contact.scss";
 
 function Contact() {
   const url = `https://liveformhq.com/form/0e09ca88-85f3-4860-bad7-b7fb2ee5eeba`;
-  const key = `6Ld7yVMeAAAAAMmURG1v-0SSc8a8mTCgHPTf2yvs`;
+  const key = `6LcuqV4eAAAAAGfdRf32bos_4rF-oHPCexo-lpSk`;
 
   window.onload = function () {
     var el = document.getElementById("g-recaptcha-response");
@@ -35,20 +36,10 @@ function Contact() {
             <input type="text" name="subject" placeholder="Subject" className="contact__form--subject" required />
             <textarea type="text" name="message" placeholder="Message" className="contact__form--message" required />
 
-            <p className="g-recaptcha--text">
-              This site is protected by reCAPTCHA and the Google&nbsp;
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-                Privacy Policy
-              </a>
-              &nbsp;and&nbsp;
-              <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">
-                Terms of Service
-              </a>
-              &nbsp;apply.
-            </p>
+            <div className="g-recaptcha" data-sitekey={key}></div>
 
             <div className="actions">
-              <button class="g-recaptcha" data-sitekey={key} data-callback={onSubmit}>
+              <button type="submit" onClick={onSubmit}>
                 Send message
               </button>
               <button type="reset">Clear Form</button>

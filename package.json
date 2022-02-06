@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "react-google-recaptcha": "^2.1.0",
     "sass": "^1.48.0"
   }
 }

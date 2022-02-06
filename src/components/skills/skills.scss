@@ -1,4 +1,4 @@
-@use "../../sass/utilities/variables" as *;
+@use "../../sass/utilities" as *;
 
 .skills {
   grid-column: 2 / 3;
@@ -32,7 +32,7 @@
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: $shadow-dark;
-    padding: 10rem 10rem 7rem;
+    padding: 10rem 3rem 7rem;
     margin-bottom: 5rem;
 
     .badges-wrap {
@@ -58,6 +58,11 @@
     flex-direction: column;
     width: max-content;
     margin: 0 auto;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
 
     & img {
       height: 10rem;

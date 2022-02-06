@@ -1,4 +1,4 @@
-@use "../../sass/utilities/variables" as *;
+@use "../../sass/utilities" as *;
 
 .contact {
   grid-column: 2 / 3;
@@ -35,6 +35,9 @@
     background-color: #000;
     padding: 10rem;
     margin-bottom: 5rem;
+    @include respond(tab-port) {
+      padding: 10rem 3rem 10rem;
+    }
 
     header {
       text-align: center;
@@ -58,10 +61,16 @@
 
     &--name {
       grid-column: 1 / 2;
+      @include respond(tab-port) {
+        grid-column: 1 / -1;
+      }
     }
 
     &--email {
       grid-column: 2 / 3;
+      @include respond(tab-port) {
+        grid-column: 1 / -1;
+      }
     }
 
     &--subject {
@@ -131,7 +140,7 @@
 
         &:hover {
           background-color: $secondary;
-          transition: $ease-in-out;
+          @include transition(background, 0.2s, ease-in-out);
         }
       }
 
@@ -140,7 +149,7 @@
 
         &:hover {
           background-color: #5f5f5f;
-          transition: $ease-in-out;
+          @include transition(background, 0.2s, ease-in-out);
         }
       }
     }

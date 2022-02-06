@@ -1,4 +1,4 @@
-@use "../../sass/utilities/variables" as *;
+@use "../../sass/utilities" as *;
 
 .footer {
   grid-column: 2 / 3;
@@ -20,6 +20,10 @@
     }
 
     &--github {
+      @include respond(phone) {
+        filter: invert(100%);
+        background-color: #000;
+      }
       &:hover {
         filter: invert(100%);
         background-color: #000;
@@ -28,24 +32,36 @@
     }
 
     &--linkedin {
+      @include respond(phone) {
+        background-color: #006599;
+      }
       &:hover {
         background-color: #006599;
         transform: translateY(-10%);
       }
     }
     &--facebook {
+      @include respond(phone) {
+        background-color: #3c5a98;
+      }
       &:hover {
         background-color: #3c5a98;
         transform: translateY(-10%);
       }
     }
     &--twitter {
+      @include respond(phone) {
+        background-color: #2daae4;
+      }
       &:hover {
         background-color: #2daae4;
         transform: translateY(-10%);
       }
     }
     &--youtube {
+      @include respond(phone) {
+        background-color: #bf2e25;
+      }
       &:hover {
         background-color: #bf2e25;
         transform: translateY(-10%);
