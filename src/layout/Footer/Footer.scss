@@ -1,13 +1,14 @@
 @use "../../sass/utilities" as *;
 
 .footer {
-  grid-column: 2 / 3;
+  grid-column: 1 / -1;
   grid-row: 7 / 8;
 
   color: #fff;
   font-size: 1.9rem;
   text-align: center;
-  margin-bottom: 5rem;
+  padding: 0 0 5rem;
+  background-color: #000;
 
   &__social {
     svg {

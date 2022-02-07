@@ -1,10 +1,9 @@
+import { Routes, Route } from "react-router-dom";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Nav from "./layout/nav/nav";
-import Hero from "./layout/hero/hero";
-import AboutMe from "./components/about-me/about-me";
-import Skills from "./components/skills/skills";
-import Contact from "./components/contact/contact";
-import Portfolio from "./components/portfolio/portfolio";
+import Home from "./home/home";
+import Success from "./components/success/success";
+import NoMatch from "./components/nomatch/nomatch";
 import Footer from "./layout/footer/footer";
 
 import "./sass/style.scss";
@@ -14,17 +13,11 @@ function App() {
     <ParallaxProvider>
       <div className="container">
         <Nav />
-        <div className="row-hero"></div>
-        <Hero />
-        <div className="row-about-me"></div>
-        <AboutMe />
-        <div className="row-skills"></div>
-        <Skills />
-        <div className="row-portfolio"></div>
-        <Portfolio />
-        <div className="row-contact"></div>
-        <Contact />
-        <div className="row-footer"></div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
         <Footer />
       </div>
     </ParallaxProvider>

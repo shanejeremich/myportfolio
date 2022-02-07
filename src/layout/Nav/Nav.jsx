@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import logo from "../../images/sj-logo.png";
 
 import "./nav.scss";
@@ -6,19 +7,19 @@ const Nav = () => {
   return (
     <nav className="nav">
       <div className="nav__items">
-        <a href="#top">
+        <HashLink to="/#top">
           <img src={logo} alt="Shane Jeremich Logo" className="nav__logo" />
-        </a>
+        </HashLink>
         <span className="nav__links">
-          <a href="#skills" className="nav__link">
+          <HashLink to="/#skills" className="nav__link">
             Skills
-          </a>
-          <a href="#portfolio" className="nav__link">
+          </HashLink>
+          <HashLink to="/#portfolio" className="nav__link">
             Portfolio
-          </a>
-          <a href="#contact" className="nav__link">
+          </HashLink>
+          <HashLink to="/#contact" className="nav__link">
             Contact
-          </a>
+          </HashLink>
           <a
             href="https://drive.google.com/file/d/1-MhCMtd7B6qRTgQGaRrEXqA5MZUI1UYV/view?usp=sharing"
             target="_blank"

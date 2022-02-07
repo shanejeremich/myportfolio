@@ -9,12 +9,13 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.1.1",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
     "react-scroll-parallax": "^3.0.1",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "cross-env BROWSER=firefox react-scripts start",
+    "start": "cross-env react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

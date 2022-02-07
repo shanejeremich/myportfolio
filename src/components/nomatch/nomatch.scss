@@ -1,0 +1,43 @@
+@use "../../sass/utilities" as *;
+
+.nomatch {
+  grid-column: 2 / 3;
+  grid-row: 2 / span 4;
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: 7rem min-content;
+  }
+
+  &__header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-indent: 1.5rem;
+    padding: 1rem;
+    letter-spacing: 1.5rem;
+    grid-row: 1 / 2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    transform: translateY(50%) translateX(5%);
+  }
+
+  &__card-content {
+    font-size: 2rem;
+    grid-row: 2 / 3;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: $shadow-dark;
+    text-align: center;
+    padding: 10rem 3rem 7rem;
+    letter-spacing: 0.3rem;
+  }
+
+  &__btn {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+  }
+}

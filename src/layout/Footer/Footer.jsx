@@ -1,5 +1,7 @@
-import "./footer.scss";
+import { HashLink } from "react-router-hash-link";
 import logo from "../../images/b&wShane.png";
+
+import "./footer.scss";
 
 function Footer() {
   return (
@@ -45,9 +47,9 @@ function Footer() {
           </svg>
         </a>
       </div>
-      <a href="#top">
+      <HashLink to="/#top">
         <img src={logo} alt="Shane Jeremich | Web Developer" className="footer__logo" />
-      </a>
+      </HashLink>
       <p>
         <small> &copy; 2022 Shane Jeremich. All rights reserved. </small>
       </p>
