@@ -90,11 +90,13 @@
           height: 5rem;
           margin: 0 2rem 5rem;
 
-          &:hover {
-            cursor: pointer;
-            transform: scale(1.1);
-            filter: $filter;
-            transition: transform 0.3s ease-in-out;
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.1);
+              filter: $filter;
+              transition: transform 0.3s ease-in-out;
+            }
           }
         }
       }

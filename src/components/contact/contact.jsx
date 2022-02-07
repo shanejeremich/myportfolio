@@ -30,7 +30,7 @@ function Contact() {
           </header>
           <form id="contact-form" className="contact__form" method="post" action={url} acceptCharset="utf-8">
             <input type="hidden" name="utf8" value="✓" />
-            <input type="hidden" name="_redirect" value={`${baseUrl}/thankyou`} />
+            <input type="hidden" name="_redirect" value={`${baseUrl}/success`} />
 
             <input type="text" name="name" placeholder="Name" className="contact__form--name" required />
             <input type="email" name="email" placeholder="Email" className="contact__form--email" required />
