@@ -1,21 +1,19 @@
+import { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import "./contact.scss";
 
 function Contact() {
+  const [isVerified, setIsVerified] = useState(false);
+
   const url = `https://liveformhq.com/form/0e09ca88-85f3-4860-bad7-b7fb2ee5eeba`;
-  const key = `6LcuqV4eAAAAAGfdRf32bos_4rF-oHPCexo-lpSk`;
-
-  window.onload = function () {
-    var el = document.getElementById("g-recaptcha-response");
-    if (el) {
-      el.setAttribute("required", "required");
-    }
-  };
-
-  function onSubmit(token) {
-    document.getElementById("contact-form").submit();
-    window.grecaptcha.reset();
-  }
+  const recaptchaKey = `6LcuqV4eAAAAAGfdRf32bos_4rF-oHPCexo-lpSk`;
+  const recaptchaRef = useRef();
   let baseUrl = window.location.origin;
+
+  const onChange = () => {
+    const token = recaptchaRef.current.getValue();
+    setIsVerified(!isVerified);
+  };
 
   return (
     <section className="contact" id="contact">
@@ -37,12 +35,17 @@ function Contact() {
             <input type="text" name="subject" placeholder="Subject" className="contact__form--subject" required />
             <textarea type="text" name="message" placeholder="Message" className="contact__form--message" required />
 
-            <div className="g-recaptcha" data-sitekey={key}></div>
+            <ReCAPTCHA
+              className="g-recaptcha"
+              ref={recaptchaRef}
+              sitekey={recaptchaKey}
+              onChange={onChange}
+              size="normal"
+              theme="dark"
+            />
 
             <div className="actions">
-              <button type="submit" onClick={onSubmit}>
-                Send message
-              </button>
+              <button disabled={!isVerified}>Send message</button>
               <button type="reset">Clear Form</button>
             </div>
           </form>
