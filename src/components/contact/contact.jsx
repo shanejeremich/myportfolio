@@ -4,14 +4,12 @@ import "./contact.scss";
 
 function Contact() {
   const [isVerified, setIsVerified] = useState(false);
-
   const url = `https://liveformhq.com/form/0e09ca88-85f3-4860-bad7-b7fb2ee5eeba`;
   const recaptchaKey = `6LcuqV4eAAAAAGfdRf32bos_4rF-oHPCexo-lpSk`;
   const recaptchaRef = useRef();
-  let baseUrl = window.location.origin;
+  const baseUrl = window.location.origin;
 
   const onChange = () => {
-    const token = recaptchaRef.current.getValue();
     setIsVerified(!isVerified);
   };
 
