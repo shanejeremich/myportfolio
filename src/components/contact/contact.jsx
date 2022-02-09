@@ -13,6 +13,14 @@ function Contact() {
     setIsVerified(!isVerified);
   };
 
+  window.onload = function () {
+    var recaptcha = document.querySelector("#g-recaptcha-response");
+
+    if (recaptcha) {
+      recaptcha.setAttribute("required", "required");
+    }
+  };
+
   return (
     <section className="contact" id="contact">
       <div className="contact__card">
@@ -43,7 +51,7 @@ function Contact() {
             />
 
             <div className="actions">
-              <button disabled={!isVerified}>Send message</button>
+              <button>Send message</button>
               <button type="reset">Clear Form</button>
             </div>
           </form>
