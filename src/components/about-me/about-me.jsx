@@ -1,4 +1,4 @@
-import userPic from "../../images/Shane5.png";
+import userPic from "../../images/Shane5.webp";
 
 import "./about-me.scss";
 

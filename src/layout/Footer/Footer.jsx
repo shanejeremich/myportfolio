@@ -1,5 +1,5 @@
 import { HashLink } from "react-router-hash-link";
-import logo from "../../images/b&wShane.png";
+import logo from "../../images/b&wShane.webp";
 
 import "./footer.scss";
 

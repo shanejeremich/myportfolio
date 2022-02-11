@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import "./nomatch.scss";
 
 function NoMatch() {
-  let baseUrl = window.location.origin;
-
   return (
     <section className="nomatch">
       <div className="nomatch__card">

@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import "./success.scss";
 
 function Success() {
-  let baseUrl = window.location.origin;
-
   return (
     <section className="success">
       <div className="success__card">

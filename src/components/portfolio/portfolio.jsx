@@ -1,10 +1,10 @@
 import "./portfolio.scss";
-import trillo from "../../images/projects/trillo.jpg";
-import crwnClothing from "../../images/projects/crwnclothing.jpg";
-import cityspire from "../../images/projects/cityspire.jpg";
-import shoppies from "../../images/projects/shoppies.jpg";
-import monstersRolodex from "../../images/projects/monstersrolodex.jpg";
-import landingPage from "../../images/projects/landingpage.jpg";
+import trillo from "../../images/projects/trillo.webp";
+import crwnClothing from "../../images/projects/crwnclothing.webp";
+import cityspire from "../../images/projects/cityspire.webp";
+import shoppies from "../../images/projects/shoppies.webp";
+import monstersRolodex from "../../images/projects/monstersrolodex.webp";
+import landingPage from "../../images/projects/landingpage.webp";
 import browser from "../../images/svg/browser.svg";
 import gitHub from "../../images/svg/github.svg";
 
