@@ -1,11 +1,11 @@
 import userPic from "../../images/Shane5.webp";
-
 import "./about-me.scss";
 
 const AboutMe = () => {
   return (
     <section className="about-me">
       <img src={userPic} alt="Shane Jeremich" className="about-me__user-img" />
+
       <header className="about-me__header">
         <h1>Hi there 👋</h1>
         <h1>

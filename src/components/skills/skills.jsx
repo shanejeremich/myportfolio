@@ -1,5 +1,5 @@
 import "./skills.scss";
-import googleNinja from "../../images/google-ninja.png";
+import googleNinja from "../../images/google-ninja.webp";
 import resume from "../../images/svg/resume.svg";
 
 function Skills() {
@@ -44,7 +44,7 @@ function Skills() {
             />
             <img
               alt="VS Code"
-              src="http://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"
+              src="https://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"
             />
             <img
               alt="Adobe Photoshop"
