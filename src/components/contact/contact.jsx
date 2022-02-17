@@ -6,7 +6,7 @@ import "./contact.scss";
 const ReCAPTCHA = loadable(() => import("react-google-recaptcha"));
 const recaptchaKey = `6LcuqV4eAAAAAGfdRf32bos_4rF-oHPCexo-lpSk`;
 const baseUrl = window.location.origin;
-const url = `https://liveformhq.com/form/0e09ca88-85f3-4860-bad7-b7fb2ee5eeba`;
+const formUrl = `https://liveformhq.com/form/0e09ca88-85f3-4860-bad7-b7fb2ee5eeba`;
 
 function Contact() {
   const [isVerified, setIsVerified] = useState(false);
@@ -34,7 +34,7 @@ function Contact() {
             <h1>Lets get together and create some stuff</h1>
             <h2>Message me your ideas and I'll get back to you right away</h2>
           </header>
-          <form id="contact-form" className="contact__form" method="post" action={url} acceptCharset="utf-8">
+          <form id="contact-form" className="contact__form" method="post" action={formUrl} acceptCharset="utf-8">
             <input type="hidden" name="utf8" value="✓" />
             <input type="hidden" name="_redirect" value={`${baseUrl}/success`} />
 

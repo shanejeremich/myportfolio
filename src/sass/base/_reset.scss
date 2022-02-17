@@ -13,17 +13,17 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @include respond(tab-land) {
-    font-size: 56.25%;
-  }
+  // @include respond(tab-land) {
+  //   font-size: 56.25%;
+  // }
   @include respond(tab-port) {
-    font-size: 50%;
+    font-size: 60%;
   }
   @include respond(phone) {
-    font-size: 45%;
+    font-size: 55%;
   }
   @include respond(phone-xs) {
-    font-size: 40%;
+    font-size: 50%;
   }
 }
 

@@ -1,13 +1,15 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import { ParallaxProvider } from "react-scroll-parallax";
+
+import Nav from "./layout/nav/nav";
+import Home from "./home/home";
+import Footer from "./layout/footer/footer";
+
 import "./sass/style.scss";
 
-const Nav = lazy(() => import("./layout/nav/nav"));
-const Home = lazy(() => import("./home/home"));
 const Success = lazy(() => import("./components/success/success"));
 const NoMatch = lazy(() => import("./components/nomatch/nomatch"));
-const Footer = lazy(() => import("./layout/footer/footer"));
 
 function App() {
   return (
