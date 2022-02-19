@@ -16,7 +16,7 @@
   }
 
   &__header {
-    font-size: calc(2rem + (20 - 14) * ((100vw - 3.2rem) / (1200 - 320)));
+    font-size: clamp(2.5rem, 1vw + 1rem, 4rem);
     text-transform: uppercase;
     text-indent: 1rem;
     padding: 1rem;
@@ -28,6 +28,12 @@
     transform: translateY(50%) translateX(3rem);
     border: 1px solid #000;
     color: #fff;
+
+    @include respond(phone-s) {
+      transform: translateY(50%);
+      margin: 0 auto;
+      letter-spacing: 1rem;
+    }
   }
 
   &__card-content {
@@ -43,11 +49,13 @@
       text-align: center;
       margin-bottom: 5rem;
       h1 {
-        font-size: 3rem;
+        font-size: clamp(2.5rem, 1vw + 2rem, 4rem);
         letter-spacing: 0.3rem;
       }
       h2 {
+        font-size: clamp(1.2rem, 1vw + 1rem, 2rem);
         font-weight: 300;
+        color: #ccc;
         letter-spacing: 0.3rem;
       }
     }

@@ -1,8 +1,8 @@
 @use "./variables" as *;
 
 .text-content {
-  font-size: 1.7rem;
-  line-height: 2rem;
+  font-size: clamp(1.4rem, 1vw + 1.4rem, 1.8rem);
+  line-height: 1.5;
 }
 
 .bar {
