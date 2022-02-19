@@ -9,21 +9,21 @@
   z-index: 10000;
   color: #fff;
   font-family: $font-default;
-  font-size: 1.6rem;
+  font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
   grid-column: 1 / -1;
 
   display: grid;
-  grid-template-columns: minmax(5rem, auto) minmax(auto, 120rem) minmax(5rem, auto);
+  // grid-template-columns: minmax(5rem, auto) minmax(auto, 120rem) minmax(5rem, auto);
+  grid-template-columns: auto minmax(auto, 120rem) auto;
 
-  @include respond(phone-s) {
-    grid-template-columns: auto auto auto;
-  }
+  // @include respond(phone) {
+  //   grid-template-columns: auto auto auto;
+  // }
 
   &__logo {
     display: block;
     height: 100%;
     padding: 1rem 0.2rem;
-    margin: 0 1rem 0 0;
     object-fit: contain;
 
     @media (hover: hover) and (pointer: fine) {
@@ -65,7 +65,6 @@
   .resume {
     color: inherit;
     text-transform: uppercase;
-    font-size: 1.8rem;
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {

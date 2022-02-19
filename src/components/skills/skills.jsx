@@ -6,7 +6,7 @@ function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="skills__card">
-        <div className="skills__header text-bg">skills & techs</div>
+        <div className="skills__header text-bg">skills</div>
         <div className="skills__card-content">
           <div className="badges-wrap">
             <img
