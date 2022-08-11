@@ -64,6 +64,14 @@
         z-index: 1;
       }
 
+      a {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        z-index: 2;
+        align-self: end;
+        justify-self: center;
+      }
+
       &__name {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
