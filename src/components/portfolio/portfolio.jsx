@@ -36,23 +36,25 @@ function Portfolio() {
             </div>
 
             <div className="project">
-              <img src={cityspire} alt="Cityspire" className="project__img" />
-              <a href="https://cityspire.shanejeremich.com/" target="_blank" rel="noopener noreferrer">
-                <h1 className="project__name">Cityspire</h1>
+              <img src={trillo} alt="Trillo" className="project__img" />
+              <a href="https://sjeremich23.github.io/Trillo/" target="_blank" rel="noopener noreferrer">
+                <h1 className="project__name">Trillo</h1>
               </a>
               <p className="project__text text-content">
-                This was a class project from my labs in Bloom Tech (f.k.a. Lambda School). Future of this app will have
-                more features. Right now this just shows the implementation of Mapbox GL and Okta for authentication.
+                This is a template layout of a hotel, flight, car rental, and tour search. This template shows examples
+                of users ratings, hotel images, descriptions, showing off various CSS/SASS styles. This was built with
+                html and CSS/SASS.
               </p>
               <div className="project__icons">
-                <a href="https://cityspire.shanejeremich.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://sjeremich23.github.io/Trillo/" target="_blank" rel="noopener noreferrer">
                   <img src={browser} alt="CRWN-Clothing" className="icon" />
                 </a>
-                <a href="https://github.com/sjeremich23/cityspire-d-fe" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/sjeremich23/Trillo" target="_blank" rel="noopener noreferrer">
                   <img src={gitHub} alt="GitHub" className="icon" />
                 </a>
               </div>
             </div>
+
             <div className="project">
               <img src={shoppies} alt="The Shoppies" className="project__img" />
               <a href="https://sjeremich23.github.io/movie-search/" target="_blank" rel="noopener noreferrer">
@@ -71,6 +73,7 @@ function Portfolio() {
                 </a>
               </div>
             </div>
+
             <div className="project">
               <img src={landingPage} alt="Landing Page" className="project__img" />
               <a
@@ -101,6 +104,7 @@ function Portfolio() {
                 </a>
               </div>
             </div>
+
             <div className="project">
               <img src={monstersRolodex} alt="Monsters Rolodex" className="project__img" />
               <a href="https://sjeremich23.github.io/Monsters-Rolodex/" target="_blank" rel="noopener noreferrer">
@@ -120,21 +124,21 @@ function Portfolio() {
                 </a>
               </div>
             </div>
+
             <div className="project">
-              <img src={trillo} alt="Trillo" className="project__img" />
-              <a href="https://sjeremich23.github.io/Trillo/" target="_blank" rel="noopener noreferrer">
-                <h1 className="project__name">Trillo</h1>
+              <img src={cityspire} alt="Cityspire" className="project__img" />
+              <a href="https://cityspire.shanejeremich.com/" target="_blank" rel="noopener noreferrer">
+                <h1 className="project__name">Cityspire</h1>
               </a>
               <p className="project__text text-content">
-                This is a template layout of a hotel, flight, car rental, and tour search. This template shows examples
-                of users ratings, hotel images, descriptions, showing off various CSS/SASS styles. This was built with
-                html and CSS/SASS.
+                This was a class project from my labs in Bloom Tech (f.k.a. Lambda School). Future of this app will have
+                more features. Right now this just shows the implementation of Mapbox GL and Okta for authentication.
               </p>
               <div className="project__icons">
-                <a href="https://sjeremich23.github.io/Trillo/" target="_blank" rel="noopener noreferrer">
+                <a href="https://cityspire.shanejeremich.com/" target="_blank" rel="noopener noreferrer">
                   <img src={browser} alt="CRWN-Clothing" className="icon" />
                 </a>
-                <a href="https://github.com/sjeremich23/Trillo" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/sjeremich23/cityspire-d-fe" target="_blank" rel="noopener noreferrer">
                   <img src={gitHub} alt="GitHub" className="icon" />
                 </a>
               </div>
