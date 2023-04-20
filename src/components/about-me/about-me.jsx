@@ -16,12 +16,11 @@ const AboutMe = () => {
         <span className="bar" aria-hidden="true">
           &nbsp;&nbsp;
         </span>
-        I'm an aspiring web developer. I have experience working with multiple teams on different
-        projects as a front-end and back-end developer. My previous work experience includes working
-        remotely with different teams on several different projects in different roles ranging from
-        front-end and back-end. My top skills are React, Javascript, Nodejs, Express. The roles I'm
-        looking for would include either an internship, apprenticeship, junior web developer as a
-        front-end or full-stack web developer.
+        I'm an aspiring web developer. As a front-end and back-end developer, I have experience
+        working with multiple teams on different projects. My previous work experience includes
+        working remotely with other teams on diverse projects ranging from front-end to back-end. My
+        top skills are React, Javascript, Nodejs, and Express. I'm seeking an internship,
+        apprenticeship, or junior web developer as a front-end or full-stack web developer.
       </p>
       <a href="#skills">
         <div className="about-me__btn btn">Learn What I can do &rarr;</div>
