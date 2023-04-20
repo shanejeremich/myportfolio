@@ -1,6 +1,7 @@
-import "./skills.scss";
+import resumeURL from "../../api/routes";
 import googleNinja from "../../images/google-ninja.webp";
 import resume from "../../images/svg/resume.svg";
+import "./skills.scss";
 
 function Skills() {
   return (
@@ -33,7 +34,10 @@ function Skills() {
               alt="Webpack"
               src="https://img.shields.io/badge/webpack%20-%238DD6F9.svg?&style=for-the-badge&logo=webpack&logoColor=black"
             />
-            <img alt="Express.js" src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge" />
+            <img
+              alt="Express.js"
+              src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"
+            />
             <img
               alt="NodeJS"
               src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"
@@ -61,11 +65,7 @@ function Skills() {
             <img alt="Google Ninja" src={googleNinja} />
           </div>
 
-          <a
-            href="https://drive.google.com/file/d/1-MhCMtd7B6qRTgQGaRrEXqA5MZUI1UYV/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="skills__resume">
+          <a href={resumeURL} target="_blank" rel="noopener noreferrer" className="skills__resume">
             <img src={resume} alt="Resume" />
             <span className="skills__resume--text">My Resume</span>
           </a>

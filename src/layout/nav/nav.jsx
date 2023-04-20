@@ -1,6 +1,8 @@
 import { HashLink } from "react-router-hash-link";
 import logo from "../../images/sj-logo.png";
 
+import resumeURL from "../../api/routes";
+
 import "./nav.scss";
 
 const Nav = () => {
@@ -21,7 +23,7 @@ const Nav = () => {
             Contact
           </HashLink>
           <a
-            href="https://drive.google.com/file/d/1-MhCMtd7B6qRTgQGaRrEXqA5MZUI1UYV/view?usp=sharing"
+            href={resumeURL}
             target="_blank"
             rel="noopener noreferrer"
             className="nav__link resume">
