@@ -16,18 +16,18 @@ const AboutMe = () => {
         <span className="bar" aria-hidden="true">
           &nbsp;&nbsp;
         </span>
-        I'm an aspiring web developer. Graduate of Bloom Institute of Technology. Completed 9-month
-        certification in Full Stack Web Development and Computer Science. Continuing my education by
+        I'm an aspiring Web Developer. Bloom Institute of Technology graduate. Completed 9-month
+        certification in Full-Stack Web Development and Computer Science. Continuing my education by
         pursuing a Bachelor of Science Degree in Web Development at Full Sail University. Ambitious
-        web developer that brings a problem-solving approach and powerful technology skills to the
-        web development process. Communicates well with the team to ascertain web marketing needs
+        Web Developer that brings a problem-solving approach and powerful technology skills to the
+        Web Development process. Communicates well with the team to ascertain web marketing needs
         and design interfaces to accommodate specifications. Detail-oriented, organized, and
         meticulous employee. Works at a fast pace to meet tight deadlines. Enthusiastic team player
-        ready to contribute to company success. As a full-stack web developer, I have experience
-        working with multiple teams on different projects. My previous work experience includes
+        ready to contribute to company success. As a Full-Stack Web Developer, I have experience
+        working with multiple teams on various projects. My previous work experience includes
         working remotely with other groups on diverse projects ranging from front-end to back-end.
-        My top skills are React, Javascript, Nodejs, and Express. I'm seeking an internship,
-        apprenticeship, or junior web developer as a front-end or full-stack web developer.
+        My top skills are React, Javascript, Nodejs, and Express. I'm seeking an Internship,
+        Apprenticeship, or Junior Web Developer as a Front-End or Full-Stack Web Developer.
       </p>
       <a href="#skills">
         <div className="about-me__btn btn">Learn What I can do &rarr;</div>
