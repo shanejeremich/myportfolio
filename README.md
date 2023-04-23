@@ -1,6 +1,6 @@
 # Shane Jeremich
 
-You can find my portfolio deployed at [Shane Jeremich](https://www.shanejeremich.com)
+You can find my portfolio deployed at [www.shanejeremich.com](https://www.shanejeremich.com)
 
 ## Overview
 
