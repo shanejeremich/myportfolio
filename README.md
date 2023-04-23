@@ -9,7 +9,7 @@ This is my portfolio website.  This will be where I house my projects, current s
 <br>
 
 ![Shane Jeremich](/public/images/portfolio.jpg)
-[<img src="public/images/testing.png" height="1068"/>](/public/images/testing.jpg) 
+[<img src="public/images/testing.png" width="1011" height="1068"/>](/public/images/testing.jpg) 
 
 <br>
 
