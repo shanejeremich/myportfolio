@@ -31,19 +31,19 @@ This is my portfolio website.  This will be where I house my projects, current s
 
 ## Key Features
 
-- API call to https://jsonplaceholder.typicode.com/users
-- Monster Images from https://robohash.org/
-- Searching through users
+- Mobile responsive
+- Link to my Resume
+- Project Section
 - CSS Grid & Flexbox
+- Live contact form to reach me via email
 
-### Front end deployed to `GitHub Pages`
+### Front end deployed to `www.shanejeremich.com`
 
-> [Monsters-Rolodex](https://sjeremich23.github.io/Monsters-Rolodex/)
+> [www.shanejeremich.com](https://www.shanejeremich.com)
 
 # APIs
 
-- https://jsonplaceholder.typicode.com/users
-- https://robohash.org/
+- None at this time
 
 # Installation Instructions
 
