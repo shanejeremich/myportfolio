@@ -24,7 +24,7 @@ This is my portfolio website.  This will be where I house my projects, current s
 <br>
 
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![React](https://img.shields.io/badge/react-v16.11.0.2-blue.svg)
+![React](https://img.shields.io/badge/react-v17.0.2-blue.svg)
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?logo=eslint&logoColor=white)
 
