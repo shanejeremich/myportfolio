@@ -32,9 +32,9 @@ This is my portfolio website.  This will be where I house my projects, current s
 ## Key Features
 
 - Mobile responsive
-- Link to my Resume
-- Project Section
-- CSS Grid & Flexbox
+- Link to my resume
+- Project section
+- CSS grid & flexbox
 - Live contact form to reach me via email
 
 ### Front end deployed to `www.shanejeremich.com`
