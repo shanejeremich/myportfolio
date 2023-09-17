@@ -1,6 +1,5 @@
 import { HashLink } from "react-router-hash-link";
 import logo from "../../images/b&wShane.webp";
-
 import "./footer.scss";
 
 function Footer() {
@@ -71,7 +70,7 @@ function Footer() {
         <img src={logo} alt="Shane Jeremich | Web Developer" className="footer__logo" />
       </HashLink>
       <p>
-        <small> &copy; 2023 Shane Jeremich. All rights reserved. </small>
+        <small>&copy; {new Date().getFullYear()} Shane Jeremich. All rights reserved.</small>
       </p>
     </footer>
   );
