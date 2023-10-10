@@ -32,5 +32,9 @@
     @media only screen and (min-width: 112.55em) {
       @content;
     } //1800px
+  } @else if $breakpoint {
+    @media only screen and (min-width: $breakpoint) {
+      @content;
+    }
   }
 }
