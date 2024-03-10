@@ -4,7 +4,7 @@ You can find my portfolio deployed at [www.shanejeremich.com](https://www.shanej
 
 ## Overview
 
-This is my portfolio website.  This will be where I house my projects, current skills, my resume, and contact form to reach me.  Future updates will include my work for prospective clients, more projects, and articles from Medium I've published.
+This is my portfolio website. This will be where I house my projects, current skills, my resume, and contact form to reach me. Future updates will include my work for prospective clients, more projects, and articles from Medium I've published.
 
 <br>
 
@@ -14,10 +14,10 @@ This is my portfolio website.  This will be where I house my projects, current s
 
 ## Contributors
 
-|                                        [Shane Jeremich](https://github.com/sjeremich23)                                        |
+|                                       [Shane Jeremich](https://github.com/shanejeremich)                                       |
 | :----------------------------------------------------------------------------------------------------------------------------: |
-|                     [<img src="public/images/shane.png" width = "200" />](https://github.com/sjeremich23)                      |
-|                    [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/sjeremich23)                    |
+|      [<img src="https://avatars.githubusercontent.com/u/51142646?v=4" width = "200" />](https://github.com/shanejeremich)      |
+|                   [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/shanejeremich)                   |
 | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/shanejeremich/) |
 
 <br>
@@ -37,9 +37,7 @@ This is my portfolio website.  This will be where I house my projects, current s
 - CSS grid & flexbox
 - Live contact form to reach me via email
 
-### Front end deployed to `www.shanejeremich.com`
-
-> [www.shanejeremich.com](https://www.shanejeremich.com)
+### Front end deployed to [`www.shanejeremich.com`](https://www.shanejeremich.com)
 
 # APIs
 
