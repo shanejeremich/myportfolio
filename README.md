@@ -38,23 +38,3 @@ This is my portfolio website. This will be where I house my projects, current sk
 - Live contact form to reach me via email
 
 ### Front end deployed to [`www.shanejeremich.com`](https://www.shanejeremich.com)
-
-# APIs
-
-- None at this time
-
-# Installation Instructions
-
-- Fork and clone the repo to install it as your own remote.
-- run: `npm install` to download all dependencies.
-- run: `npm start` to start your local development server.
-
-## Other Scripts
-
-```bash
-_ build - creates a build of the application
-_ start - starts the production server after a build is created
-_ test - runs tests in **tests** directory
-_ eject - copy the configuration files and dependencies into the project so you have full control over them \* deploy - publishes build folder to gh-pages branch
-
-```
