@@ -1,0 +1,22 @@
+@use "../../sass/utilities" as *;
+@use "../../sass/base" as *;
+
+.nomatch {
+  grid-column: 2 / 3;
+  grid-row: 2 / -1;
+
+  font-size: 2rem;
+  grid-row: 2 / 3;
+  text-align: center;
+  letter-spacing: $letter-spacing;
+
+  &__back {
+    margin-top: 2rem;
+  }
+
+  &__url {
+    color: $gray-600;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}

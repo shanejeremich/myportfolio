@@ -1,0 +1,24 @@
+@use "../../sass/utilities" as *;
+
+.portfolio {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 7rem;
+    justify-items: center;
+
+    @include respond(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: max-content;
+    margin: 8rem auto 0;
+  }
+}

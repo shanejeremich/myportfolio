@@ -1,0 +1,82 @@
+@use "colors" as *;
+@use "typography" as *;
+@use "../utilities/mixins" as *;
+
+/* Remove default margin */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  @include respond(tab-port) {
+    font-size: 60%;
+  }
+  @include respond(phone) {
+    font-size: 55%;
+  }
+  @include respond(phone-xs) {
+    font-size: 50%;
+  }
+}
+
+/* Set core body defaults */
+body {
+  background: $background;
+  font-family: $font-primary;
+}
+
+.container {
+  min-width: 90%;
+  max-width: 140rem;
+  margin: auto;
+  background: $white;
+  box-shadow: $shadow-dark;
+
+  display: grid;
+  grid-template-columns: minmax(0.1rem, auto) minmax(40rem, 120rem) minmax(0.1rem, auto);
+
+  &.with-rows {
+    gap: 5rem 0;
+
+    @include respond(phone) {
+      gap: 0;
+    }
+  }
+}
+
+.bar {
+  width: 1rem;
+  margin-right: 1rem;
+  background: $primary;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%full-width {
+  width: 100%;
+}
+
+%full-height {
+  height: 100%;
+}
+
+.loading-indicator {
+  @extend %flex-center;
+  @extend %full-width;
+  @extend %full-height;
+  color: $white;
+  z-index: 1000;
+  font-size: 5rem;
+  padding-top: 10rem;
+}

@@ -1,0 +1,63 @@
+// primary color
+$primary: #213f91;
+$secondary: #43bff0;
+
+// Black and White`
+$black: #000;
+$eerie-black: #222;
+$text-black: #181818;
+$white: #fff;
+
+// gray scale colors
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// dark gray scale colors
+$dark-gray-100: #4a4b4c;
+$dark-gray-200: #3a3b3c;
+$dark-gray-300: #282828;
+
+// bg and text colors
+$background: $primary;
+$text-color: $gray-900;
+
+// semantic colors
+$success-color: #28a745;
+$error-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+
+// input colors
+$input-color: $gray-800;
+$input-hover-color: $gray-900;
+$input-active-color: $gray-900;
+$input-focus-color: $gray-900;
+
+// dark mode colors
+$dark-mode-background: $eerie-black;
+$dark-mode-text-color: $white;
+
+// Social colors
+$linkedin: #006599;
+$facebook: #3c5a98;
+$twitter: #2daae4;
+$youtube: #bf2e25;
+
+// border
+$alpha: 0.2;
+
+// shadows
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+$text-shadow: -1px -1px 0px $text-black;
+
+// filter
+$filter: brightness(0) saturate(100%) invert(59%) sepia(53%) saturate(1463%) hue-rotate(173deg)
+  brightness(110%) contrast(88%);

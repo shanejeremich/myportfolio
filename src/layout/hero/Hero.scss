@@ -1,0 +1,30 @@
+@use "../../sass/utilities" as *;
+@use "../../sass/base" as *;
+
+.hero {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  display: flex;
+  justify-content: center;
+
+  @include respond(tab-land) {
+    margin: 0 5em;
+    padding: 0 2rem;
+  }
+
+  @include respond(phone) {
+    margin: -10rem 0 5em;
+  }
+
+  &__img {
+    grid-column: 1/-1;
+    height: 35rem;
+
+    @include respond(phone) {
+      height: 25rem;
+      width: calc(90% + 4rem);
+      margin: 0 auto;
+    }
+  }
+}

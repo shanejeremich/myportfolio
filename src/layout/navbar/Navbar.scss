@@ -1,0 +1,76 @@
+@use "../../sass/base/" as *;
+@use "../../sass/utilities" as *;
+
+.nav {
+  background: $black;
+  position: sticky;
+  top: env(safe-area-inset-top);
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  color: $white;
+  font-family: $font-primary;
+  font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
+  grid-column: 1 / -1;
+
+  &__logo {
+    align-content: center;
+    padding: 0 2rem;
+
+    @include respond(tab-port) {
+      padding: 1rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    padding-right: 2rem;
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    gap: 0 2rem;
+    align-items: center;
+  }
+
+  &__link {
+    width: max-content;
+    @include transition(color, 0.25s, ease);
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: $secondary;
+        box-shadow: 0 2px 0 0 currentcolor;
+      }
+    }
+  }
+
+  &__link:link,
+  &__link:visited,
+  &__link:active {
+    text-transform: uppercase;
+  }
+
+  &__resume {
+    background: $primary;
+    padding: 1rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    text-transform: uppercase;
+    border-radius: 0.5rem; // Optional: Add some border-radius for rounded corners
+    @include transition(background, 0.3s, ease-in-out);
+
+    &:hover {
+      color: $black;
+      background: $secondary;
+    }
+  }
+
+  // @include hover-styles($black, $secondary, 0 1.6rem 3.2rem rgba($black, $alpha));
+}

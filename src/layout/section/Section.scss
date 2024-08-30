@@ -1,0 +1,74 @@
+@use "../../sass/utilities/" as *;
+@use "../../sass/base/colors" as *;
+
+.section {
+  z-index: 999;
+  padding: 5rem 0;
+
+  &__card {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: 7rem min-content;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 90%;
+    }
+  }
+
+  &__header {
+    font-size: clamp(2.5rem, 1vw + 1rem, 4rem);
+    text-transform: uppercase;
+    text-indent: 1.5rem;
+    padding: 1rem;
+    letter-spacing: 1.5rem;
+    grid-row: 1 / 2;
+    color: $white;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    transform: translateY(50%) translateX(3rem);
+
+    @include respond(phone-s) {
+      transform: translateY(50%);
+      margin: 0 auto;
+      letter-spacing: 1rem;
+    }
+  }
+
+  .text-bg {
+    background: $black;
+
+    &--primary {
+      background: $primary;
+    }
+
+    &--green {
+      background: $success-color;
+      border: 1px solid $black;
+      color: $black;
+    }
+
+    &--red {
+      background: $error-color;
+      border: 1px solid $black;
+      color: $black;
+    }
+  }
+
+  &__card-content {
+    grid-row: 2 / 3;
+    background: $white;
+    border: 1px solid rgba($black, $alpha);
+    box-shadow: $shadow-dark;
+    padding: 10rem 3rem 7rem;
+    margin-bottom: 5rem;
+  }
+
+  &__btn {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,179 @@
+@use "../../sass/utilities" as *;
+@use "../../sass/base/colors" as *;
+@use "../../sass/base/typography" as *;
+
+.contact {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+  color: $white;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  &__title {
+    font-size: clamp(2.5rem, 1vw + 2rem, 4rem);
+    letter-spacing: $letter-spacing;
+  }
+
+  &__subtitle {
+    font-size: clamp(1.2rem, 1vw + 1rem, 2rem);
+    font-weight: $font-weight-thin;
+    color: $gray-400;
+    letter-spacing: $letter-spacing;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--name {
+      grid-column: 1 / 2;
+    }
+
+    &--email {
+      grid-column: 2 / 3;
+    }
+
+    &--name,
+    &--email {
+      @include respond(tab-port) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    &--subject,
+    &--message {
+      grid-column: 1 / -1;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      background: $dark-gray-300;
+      border: none;
+      height: 6rem;
+      border-radius: 0.8rem;
+      padding: 2rem;
+      color: $gray-500;
+      width: 100%;
+      font-weight: $font-weight-thin;
+      font-size: 1.6rem;
+      text-shadow: $text-shadow;
+      box-shadow: inset 0px 2px 3px 1px rgb(0 0 0 / 5%), 0px 1px 0px 0px rgb(255 255 255 / 3%);
+    }
+
+    textarea {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 15rem;
+      background: $dark-gray-300;
+      border: none;
+      border-top-left-radius: 0.8rem;
+      border-top-right-radius: 0.8rem;
+      padding: 2rem;
+      color: $gray-500;
+      width: 100%;
+      font-weight: $font-weight-thin;
+      font-size: 1.6rem;
+      text-shadow: $text-shadow;
+      box-shadow: inset 0px 2px 3px 1px rgb(0 0 0 / 5%), 0px 1px 0px 0px rgb(255 255 255 / 3%);
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      -webkit-appearance: none;
+      appearance: none;
+      color: $gray-500;
+      box-shadow: inset 0px 2px 5px 0px rgb(0 0 0 / 5%), 0px 1px 0px 0px rgb(255 255 255 / 3%),
+        inset 0px 0px 2px 1px $primary;
+      transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      -webkit-text-fill-color: $gray-500;
+      -webkit-box-shadow: inset 0px 2px 5px 0px rgb(0 0 0 / 5%),
+        0px 1px 0px 0px rgb(255 255 255 / 3%), inset 0px 0px 2px 1px $primary;
+      box-shadow: inset 0px 2px 5px 0px rgb(0 0 0 / 5%), 0px 1px 0px 0px rgb(255 255 255 / 3%),
+        inset 0px 0px 2px 1px $primary;
+      transition: background 5000s ease-in-out 0s;
+    }
+
+    &--actions {
+      grid-column: 1 / -1;
+      width: max-content;
+
+      @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+      }
+    }
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  &__btn {
+    color: $white;
+    border: none;
+    padding: 2rem 2.35rem 2rem 2.35rem;
+    font-size: 1.8rem;
+    max-width: 25rem;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+    cursor: pointer;
+
+    &:nth-of-type(1) {
+      background: $primary;
+      margin-right: 2rem;
+
+      @include respond(phone) {
+        margin: 0;
+      }
+
+      &:hover {
+        background: $secondary;
+        @include transition(background, 0.2s, ease-in-out);
+      }
+    }
+
+    &:nth-of-type(2) {
+      background: $gray-700;
+
+      &:hover {
+        background: $gray-600;
+        color: $white;
+
+        @include transition(background, 0.2s, ease-in-out);
+      }
+    }
+  }
+}

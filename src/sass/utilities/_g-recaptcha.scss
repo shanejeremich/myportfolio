@@ -1,0 +1,21 @@
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
+.g-recaptcha {
+  grid-column: 1 / -1;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.g-recaptcha--text {
+  font-size: 1.6rem;
+  grid-column: 1 / -1;
+  text-align: center;
+}

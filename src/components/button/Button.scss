@@ -1,0 +1,40 @@
+@use "../../sass/base/" as *;
+@use "../../sass/utilities" as *;
+
+.btn {
+  &,
+  &:link,
+  &visited {
+    color: $white;
+    background: $primary;
+    width: max-content;
+    border: none;
+    padding: 2.5rem 2.35rem 2.5rem 2.35rem;
+    font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
+
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+    cursor: pointer;
+    @include transition;
+  }
+
+  @include hover-styles($black, $secondary, 0 1.6rem 3.2rem rgba($black, $alpha), $scale);
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba($black, $alpha);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  @include respond(phone) {
+    text-align: center;
+  }
+
+  @include respond(phone-xs) {
+    width: 30rem;
+  }
+}

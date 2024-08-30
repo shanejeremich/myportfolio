@@ -1,0 +1,33 @@
+@use "../../sass/utilities" as *;
+@use "../../sass/base" as *;
+
+.row-hero,
+.row-about-me,
+.row-skills,
+.row-portfolio,
+.row-contact,
+.row-footer {
+  grid-column: 1 / -1;
+  background: $gray-400;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: $shadow-dark;
+  z-index: 1;
+}
+
+.row-hero {
+  background: $black;
+  margin-top: -10rem;
+  padding-bottom: 10rem;
+
+  @include respond(phone) {
+    padding-top: 20rem;
+  }
+}
+
+.row-contact {
+  margin-bottom: -5rem;
+}
+
+.row-footer {
+  background: #000;
+}

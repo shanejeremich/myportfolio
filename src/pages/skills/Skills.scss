@@ -1,0 +1,51 @@
+@use "../../sass/utilities" as *;
+@use "../../sass/base" as *;
+
+.skills {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+
+  &__badges-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+
+  img {
+    height: 5rem;
+  }
+
+  &__btn,
+  &__resume {
+    width: max-content;
+    margin: 0 auto;
+
+    & img {
+      height: 10rem;
+    }
+  }
+
+  &__resume {
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
+
+    &--text {
+      font-size: 2rem;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      text-align: center;
+      transform: translateX(-4%);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    margin: 5rem auto 0;
+  }
+}
