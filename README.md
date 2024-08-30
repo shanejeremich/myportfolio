@@ -1,10 +1,10 @@
-# Shane Jeremich
+# 🚀 **Shane Jeremich**
 
 You can find my portfolio deployed at [www.shanejeremich.com](https://www.shanejeremich.com)
 
-## Overview
+## 📖 **Overview**
 
-This is my portfolio website. This will be where I house my projects, current skills, my resume, and contact form to reach me. Future updates will include my work for prospective clients, more projects, and articles from Medium I've published.
+This is my portfolio website. Here, I house my projects, current skills, my resume, and a contact form to reach me. Future updates will include my work for prospective clients, more projects, and articles from Medium I've published.
 
 <br>
 
@@ -12,7 +12,7 @@ This is my portfolio website. This will be where I house my projects, current sk
 
 <br>
 
-## Contributors
+## 🛠️ **Contributors**
 
 |                                       [Shane Jeremich](https://github.com/shanejeremich)                                       |
 | :----------------------------------------------------------------------------------------------------------------------------: |
@@ -25,16 +25,16 @@ This is my portfolio website. This will be where I house my projects, current sk
 
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 ![React](https://img.shields.io/badge/react-v17.0.2-blue.svg)
-![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
-![ESLint](https://img.shields.io/badge/ESLint-4B3263?logo=eslint&logoColor=white)
-![SASS](https://img.shields.io/badge/SASS-hotpink.svg?&logo=SASS&logoColor=white)
+![🎨 code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
+![🔧 ESLint](https://img.shields.io/badge/ESLint-4B3263?logo=eslint&logoColor=white)
+![🎨 SASS](https://img.shields.io/badge/SASS-hotpink.svg?&logo=SASS&logoColor=white)
 
-## Key Features
+## ✨ **Key Features**
 
-- Mobile responsive
-- Link to my resume
-- Project section
-- CSS grid & flexbox
-- Live contact form to reach me via email
+- 📱 **Mobile responsive**
+- 📄 **Link to my resume**
+- 💼 **Project section**
+- 🎛️ **CSS grid & flexbox**
+- ✉️ **Live contact form to reach me via email**
 
-### Front end deployed to [`www.shanejeremich.com`](https://www.shanejeremich.com)
+### 🌐 **Front end deployed to** [`www.shanejeremich.com`](https://www.shanejeremich.com)
