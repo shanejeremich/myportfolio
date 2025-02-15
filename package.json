@@ -4,9 +4,11 @@
   "scripts": {
     "dev": "vite --config ./config/vite.config.js --host",
     "build": "vite build --config ./config/vite.config.js",
+    "build:deploy": "npm run build && npm run deploy",
     "lint": "eslint -c ./config/eslint.config.js .",
     "preview": "vite preview --config ./config/vite.config.js",
-    "deploy": "scp -P $SSH_SJ_PORT -r dist/* $SSH_SJ_USER@$SSH_SJ_HOST:$SSH_SJ_REMOTE_PATH"
+    "deploy": "rsync -avz --stats -e \"ssh -p $SSH_SJ_PORT\" dist/ $SSH_SJ_USER@$SSH_SJ_HOST:$SSH_SJ_REMOTE_PATH",
+    "deploy:dry": "rsync -avzn -e \"ssh -p $SSH_SJ_PORT\" dist/ $SSH_SJ_USER@$SSH_SJ_HOST:$SSH_SJ_REMOTE_PATH"
   },
   "dependencies": {
     "@loadable/component": "^5.15.3",
