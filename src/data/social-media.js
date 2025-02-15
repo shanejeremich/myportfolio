@@ -1,6 +1,6 @@
 export const socialLinks = [
   {
-    href: "https://github.com/sjeremich23/",
+    href: "https://github.com/shanejeremich/",
     ariaLabel: "GitHub",
     svgClass: "footer__social--github",
     viewBox: "0 0 72 72",
